@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Samtex Solutions</title>
+
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="fonts/all.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <style>
+        
+    </style>
+</head>
+<body>
+
+     
+    <nav class="nav-container1" id="top-navbar">
+        <div class="nav-left">
+            <a href="link1.html">
+                <img src="images/neobrand.jpg" alt="Neobrand logo" class="neo-image d-none" id="neo-image">
+                <img src="images/S logo.png" alt="Company Logo" class="l-logo" id="l-logo">
+            </a>
+        </div>
+        <button class="toggle-button" id="sidebarToggle">
+            <span><i class="fas fa-bars"></i></span>
+        </button>
+        
+        <div class="mobile-toggle d-md-none d-lg-none d-xl-none">
+            <button id="mobile-menu-btn0" class="toggle-menu-btn">
+                &#9776; 
+            </button>
+        </div>
+
+        <div class="d-flex justify-content-end align-items-center p-1">
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn">&#9728;</button>
+            </div>
+            <div class="user-icon-container">
+                <i class="user-icon fa fa-user" id="user-icon" aria-label="User Profile" onclick="toggleDropdown()"></i>
+                <div class="user-dropdown" id="user-dropdown">
+                    <ul>
+                        <li><a href="#">Admin</a></li>
+                        <li><a href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="date-time">
+                <span id="current-date"></span><br>
+                <span id="current-time"></span>
+            </div>
+            <div class="nav-center">
+                <img src="images/neosilica.png" alt="Company Logo" class="s-logo">
+                <img src="images/S logo.png" alt="Company Logo" class="k-logo">
+            </div>
+            
+        </div>
+        
+    </nav>
+
+    <div class="sidebar d-flex flex-column justify-content-between align-items-center" id="sidebar">
+        <div>   
+            <ul>
+                <li class="side-icons1">
+                    <a class="text-left" href="dashboard.html" onclick="toggleMenu()">
+                        <i class="side-icons fas fa-desktop"></i><span>Dashboard</span>
+                    </a>
+                    <ul class="icons-dropdown-menu">
+                        <li><a href="#">Dashboard</a></li>
+                    </ul>
+                </li>
+                <li class="side-icons1">
+                    <a class="text-left" href="#" onclick="toggleMenu()">
+                        <i class="side-icons fas fa-building"></i><span>AHU</span>
+                    </a>
+                    <ul class="icons-dropdown-menu">
+                        <li><a href="#">AHU</a></li>
+                    </ul>
+                </li>
+                <li class="side-icons1">
+                    <a class="text-left" href="chillers.html" onclick="toggleMenu()">
+                        <i class="side-icons fas fa-snowflake"></i><span>Chillers</span>
+                    </a>
+                    <ul class="icons-dropdown-menu">
+                        <li><a href="#">Chillers</a></li>
+                    </ul>
+                </li>
+                <li class="side-icons1">
+                    <a class="text-left" href="analysis.html" onclick="toggleMenu()">
+                        <i class="side-icons fas fa-chart-bar"></i><span>Analysis</span>
+                    </a>
+                    <ul class="icons-dropdown-menu">
+                        <li><a href="#">Analysis</a></li>
+                    </ul>
+                </li>
+                <li class="side-icons1">
+                    <a class="text-left" href="reports.html" onclick="toggleMenu()">
+                        <i class="side-icons fas fa-file-alt"></i><span>Reports</span>
+                    </a>
+                    <ul class="icons-dropdown-menu">
+                        <li><a href="#">Reports</a></li>
+                    </ul>
+                </li>
+                <li class="side-icons1">
+                    <a class="text-left" href="alarms.html" onclick="toggleMenu()">
+                        <i class="side-icons fas fa-bell"></i><span>Alarms</span>
+                    </a>
+                    <ul class="icons-dropdown-menu">
+                        <li><a href="#">Alarms</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <footer class="d-none">&copy; 2024 Samtex Solutions.All rights reserved</footer>
+    </div>
+   
+        <div class="sidebar-icons0" id="sidebar-icons0">
+            <ul>
+                <li>
+                    <a href="dashboard.html"><i class="icon fas fa-desktop"></i></a>
+                    <ul class="dropdown-menuk" >
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="icon fas fa-building"></i></a>
+                    <ul class="dropdown-menuk">
+                        <li><a href="#">AHU</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="chillers.html"><i class="icon fas fa-snowflake"></i></a>
+                    <ul class="dropdown-menuk">
+                        <li><a href="chillers.html">Chillers</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="analysis.html"><i class="icon fas fa-chart-bar"></i></a>
+                    <ul class="dropdown-menuk">
+                        <li><a href="analysis.html">Analysis</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="reports.html"><i class="icon fas fa-file-alt"></i></a>
+                    <ul class="dropdown-menuk">
+                        <li><a href="reports.html">Reports</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="alarms.html"><i class="icon fas fa-bell"></i></a>
+                    <ul class="dropdown-menuk">
+                        <li><a href="alarms.html">Alarms</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="container-fluid containerbg">
+            <!-- <span class="titleheading">Dashboard</span> -->
+            <div class="row">
+                <div class="container-fluid mt-1">
+                    <div class="row">
+                        <div class="col-auto col-sm-4 order-first">
+                            <span class="ahutitle" class="tooltip" data-toggle="modal" data-target="#ahutemp">AHU UNIT TYPE B</span>
+                        </div>
+        
+                        <div class="col-auto col-sm-4 text-center">
+                            <button id="emg" class="emgbtn">Emergency</button>
+                        </div>
+        
+                        <div class="col-auto col-sm-4 order-last text-right zoneright">
+                            <span class="ahudropdown">
+                                <select name="" id="ahu-select">
+                                    <option selected="selected">Select AHU</option>
+                                    <option value="ahueight.html">AHU 8</option>
+                                    <option value="ahutypea.html">AHU 5 (A)</option>
+                                    <option value="#">AHU 5 (B)</option>
+                                </select>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="container-fluid text-center my-0 mx-0">
+                    <object type="image/svg+xml" id="svg5238" data="svg/BBPL_AHU_UNIT_5B.svg"></object>
+                </div>
+        
+                <!-- ss temp *******-->
+                <div class="modal fade" id="ahutemp" tabindex="-1" role="dialog" aria-labelledby="ahutemp" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ahutemp">Supply Air Temperature</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <!--body-->
+                            <div class="modal-body">
+                                <table class="table table-sm setsensor">
+                                    <thead>
+                                        <tr>
+                                            <th>Setting</th>
+                                            <th>Setpoint</th>
+                                            <th>&nbsp;</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr style="display:none">
+                                            <td>Initial Range</td>
+                                            <td>
+                                                Min <input type="text" value="" style="width:70px;" id="ahuir1" disabled>
+                                                Max <input type="text" value="" style="width:70px;" id="ahuir2" disabled>
+                                            </td>
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Range Min</td>
+                                            <td>
+                                                <div id="satspi1"></div>
+                                            </td>
+                                            <td rowspan="2" style="text-align:center">
+                                                <button type="button" class="btn btn-primary" id="rangeset">SetVal</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Range Max</td>
+                                            <td>
+                                                <div id="satspi2"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Setpoint</td>
+                                            <td>
+                                                <div id="slider-range1">
+                                                    <div id="custom-handle" class="ui-slider-handle"></div>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="rmin" style="margin-top: 10px;">
+                                                        Min <span style="font-weight: bold;" id="setalarmminval1">0</span>
+                                                    </div>
+                                                    <div>&nbsp;</div>
+                                                    <div class="rmax" style="margin-top: 10px;">
+                                                        Max <input type="text" id="set4" readonly class="rangebar rangeval">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td style="text-align:center">
+                                                <button type="button" class="btn btn-primary" id="rangeset">Set</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--body end-->
+                        </div>
+                    </div>
+                </div>
+                <!-- ss temp end *********-->
+            </div>
+        </div>
+        
+      <script> $('#ahu-select').on('change',function() {
+        const url = $(this).val();
+        if(url){
+            window.location =url;
+        }
+       
+    });
+    </script>
+          <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+          <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+          <script src="js/popper.min.js"></script>
+          <script src="fonts/all.js"></script>
+          <script src="js/customScript.js"></script>
+          <script src="js/dashboard01.js"></script>
+       
+</body>
+</html>

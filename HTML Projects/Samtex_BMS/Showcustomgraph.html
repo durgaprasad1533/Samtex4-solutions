@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Samtex</title>
+
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/analysis.css">
+    <link rel="stylesheet" href="images/redmond/theme.css">
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <link rel="stylesheet" href="fonts/all.css">
+    <link rel="stylesheet" href="images/redmond/jquery-ui.css">
+    <link rel="stylesheet" href="Roboto/css?family=Roboto&display=swap">
+</head>
+<body>
+
+   
+  <nav class="nav-container1" id="top-navbar">
+    <div class="nav-left">
+        <a href="link1.html">
+            <img src="images/neobrand.jpg" alt="Neobrand logo" class="neo-image d-none" id="neo-image">
+            <img src="images/S logo.png" alt="Company Logo" class="l-logo" id="l-logo">
+        </a>
+    </div>
+    <button class="toggle-button" id="sidebarToggle">
+        <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+    <div class="mobile-toggle d-md-none d-lg-none d-xl-none">
+        <button id="mobile-menu-btn0" class="toggle-menu-btn">
+            &#9776; 
+        </button>
+    </div>
+
+    <div class="d-flex justify-content-end align-items-center p-1">
+        <div class="theme-toggle">
+            <button id="theme-toggle-btn">&#9728;</button>
+        </div>
+        <div class="user-icon-container">
+            <i class="user-icon fa fa-user" id="user-icon" aria-label="User Profile" onclick="toggleDropdown()"></i>
+            <div class="user-dropdown" id="user-dropdown">
+                <ul>
+                    <li><a href="#">Admin</a></li>
+                    <li><a href="#">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="date-time">
+            <span id="current-date"></span><br>
+            <span id="current-time"></span>
+        </div>
+        <div class="nav-center">
+            <img src="images/neosilica.png" alt="Company Logo" class="s-logo">
+            <img src="images/S logo.png" alt="Company Logo" class="k-logo">
+        </div>
+        
+    </div>
+    
+</nav>
+
+<div class="sidebar d-flex flex-column justify-content-between align-items-center" id="sidebar">
+    <div>   
+        <ul>
+            <li class="side-icons1">
+                <a class="text-left" href="dashboard.html" onclick="toggleMenu()">
+                    <i class="side-icons fas fa-desktop"></i><span>Dashboard</span>
+                </a>
+                <ul class="icons-dropdown-menu">
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </li>
+            <li class="side-icons1">
+                <a class="text-left" href="ahutypeb3.html" onclick="toggleMenu()">
+                    <i class="side-icons fas fa-building"></i><span>AHU</span>
+                </a>
+                <ul class="icons-dropdown-menu">
+                    <li><a href="ahueight.html">AHU</a></li>
+                </ul>
+            </li>
+            <li class="side-icons1">
+                <a class="text-left" href="chillers.html" onclick="toggleMenu()">
+                    <i class="side-icons fas fa-snowflake"></i><span>Chillers</span>
+                </a>
+                <ul class="icons-dropdown-menu">
+                    <li><a href="chillers.html">Chillers</a></li>
+                </ul>
+            </li>
+            <li class="side-icons1">
+                <a class="text-left" href="analysis.html" onclick="toggleMenu()">
+                    <i class="side-icons fas fa-chart-bar"></i><span>Analysis</span>
+                </a>
+                <ul class="icons-dropdown-menu">
+                    <li><a href="analysis.html">Analysis</a></li>
+                </ul>
+            </li>
+            <li class="side-icons1">
+                <a class="text-left" href="reports.html" onclick="toggleMenu()">
+                    <i class="side-icons fas fa-file-alt"></i><span>Reports</span>
+                </a>
+                <ul class="icons-dropdown-menu">
+                    <li><a href="reports.html">Reports</a></li>
+                </ul>
+            </li>
+            <li class="side-icons1">
+                <a class="text-left" href="alarms.html" onclick="toggleMenu()">
+                    <i class="side-icons fas fa-bell"></i><span>Alarms</span>
+                </a>
+                <ul class="icons-dropdown-menu">
+                    <li><a href="alarms.html">Alarms</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <footer class="d-none">&copy; 2024 Samtex Solutions.All rights reserved</footer>
+</div>
+
+    <div class="sidebar-icons0" id="sidebar-icons0">
+        <ul>
+            <li>
+                <a href="dashboard.html"><i class="icon fas fa-desktop"></i></a>
+                <ul class="dropdown-menuk" >
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="ahueight.html"><i class="icon fas fa-building"></i></a>
+                <ul class="dropdown-menuk">
+                    <li><a href="ahueight.html">AHU</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="icon fas fa-snowflake"></i></a>
+                <ul class="dropdown-menuk">
+                    <li><a href="chillers.html">Chillers</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="icon fas fa-chart-bar"></i></a>
+                <ul class="dropdown-menuk">
+                    <li><a href="analysis.html">Analysis</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="icon fas fa-file-alt"></i></a>
+                <ul class="dropdown-menuk">
+                    <li><a href="reports.html">Reports</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="icon fas fa-bell"></i></a>
+                <ul class="dropdown-menuk">
+                    <li><a href="alarms.html">Alarms</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+  
+
+  <div class="container-fluid containerbg mt-4 mb-5">
+    <div class="row">
+      <div class="container bg-light rounded" style="height:auto">
+        <div class="row mb-2">
+          <div class="col-sm-6 mb-2 mt-2"><span class="heading">Custom Graph</span></div>
+          <div class="col-sm-6 mb-2 mt-2 text-right"><a href="configureGraph.html" class="btn btn-primary btn-sm">Configure New Graph</a></div>
+          
+          <div class="col-sm-11 col-md-11 m-auto">
+            <div class="alert alert-warning text-center" role="alert"> 
+              Show Custom Graph
+            </div>
+          </div>
+
+          <div class="col-sm-11 col-md-6 m-auto">
+            <table class="table table-bordered datatable">
+              <tbody>
+                <tr>
+                  <th>Graph Name</th>
+                  <th>Edit Graph</th>
+                  <th>Delete Graph</th>
+                </tr>
+
+                <tr>
+                  <td>TestGraph</td>
+                  <td><a href="#" data-toggle="modal" data-target=".bd-example-modal-lg">Click and Edit</a></td>
+                  <td><a id="68" href="#">Delete</a></td>
+                </tr>
+
+                <tr>
+                  <td>ABC</td>
+                  <td><a id="67" href="#">Edit</a></td>
+                  <td><a id="67" href="#">Delete</a></td>
+                </tr>
+
+                <tr>
+                  <td>Inv_Daily_Yield</td>
+                  <td><a id="66" href="#">Edit</a></td>
+                  <td><a id="66" href="#">Delete</a></td>
+                </tr>
+
+                <tr>
+                  <td>SMB 2 Amp</td>
+                  <td><a id="64" href="#">Edit</a></td>
+                  <td><a id="64" href="#">Delete</a></td>
+                </tr>
+
+                <tr>
+                  <td>SMP Amp</td>
+                  <td><a id="63" href="#">Edit</a></td>
+                  <td><a id="63" href="#">Delete</a></td>
+                </tr>
+
+                <tr>
+                  <td>qq</td>
+                  <td><a id="62" href="#">Edit</a></td>
+                  <td><a id="62" href="#">Delete</a></td>
+                </tr>
+
+                <tr>
+                  <td>inv-7,2&amp; 4</td>
+                  <td><a id="61" href="#">Edit</a></td>
+                  <td><a id="61" href="#">Delete</a></td>
+                </tr>
+
+                <tr>
+                  <td>MFM Meters</td>
+                  <td><a id="56" href="#">Edit</a></td>
+                  <td><a id="56" href="#">Delete</a></td>
+                </tr>
+
+                <tr>
+                  <td>Jakson TILTWMS</td>
+                  <td><a id="50" href="#">Edit</a></td>
+                  <td><a id="50" href="#">Delete</a></td>
+                </tr>
+
+                <tr>
+                  <td>KW Irr</td>
+                  <td><a id="47" href="#">Edit</a></td>
+                  <td><a id="47" href="#">Delete</a></td>
+                </tr>
+
+                <tr>
+                  <td>NEW</td>
+                  <td><a id="46" href="#">Edit</a></td>
+                  <td><a id="46" href="#">Delete</a></td>
+                </tr>
+
+                <tr>
+                  <td>Jakson E&amp;INV</td>
+                  <td><a id="42" href="#">Edit</a></td>
+                  <td><a id="42" href="#">Delete</a></td>
+                </tr>
+
+                <tr>
+                  <td>Jakson WMS</td>
+                  <td><a id="15" href="#">Edit</a></td>
+                  <td><a id="15" href="#">Delete</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </div>
+    
+  <!-- Modal -->  
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Edit Graph</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="col-sm-11 col-md-11 m-auto">
+            <form class="form-row border my-2 formbg">
+              <div class="form-group col-md-3">
+                <label>Graph Name:</label>
+                <input type="text" id="Gname" class="form-control" />
+              </div>
+
+              <div class="form-group col-md-3">
+                <label>Graph Type:</label>
+                <select name="ahu" id="selectgraph" class="form-control">
+                  <option>Line</option>
+                </select>
+              </div>
+              <div class="form-group col-md-3">
+                <label>Graph Interval:</label>
+                <select id="graphInterval" name="graphInterval" class="form-control">
+                  <option value="1">1 Min</option>
+                  <option value="5">5 Min</option>
+                  <option value="15">15 Min</option>
+                  <option value="30">30 Min</option>
+                  <option value="60">60 Min</option>
+                </select>
+              </div>
+              <div class="form-group col-md-3 pt-3">
+                <button type="submit" class="btn btn-primary btn-sm mt-2">Add Parameter</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-sm-11 col-md-11 m-auto">
+            <form class="form-row border my-2 formbg">
+              <div class="form-group col-md-3">
+                <label>Device Type:</label>
+                <select id="sourceId_0" name="sourceId" class="form-control">
+                  <option value="1">Energy Meter</option>
+                  <option value="3">Central Inverter</option>
+                  <option value="5">String Combiner Box</option>
+                  <option value="6">Weather Station</option>
+                </select>
+              </div>
+
+              <!-- Fixed 'deivceId_0' to 'deviceId_0' -->
+              <div class="form-group col-md-3">
+                <label>Device:</label>
+                <select id="deviceId_0" name="deviceId" class="form-control">
+                  <option value="1901-570425346">IR1:ACDB</option>
+                  <option value="1902-570425346">IR2:ACDB</option>
+                  <option value="1903-570425346">IR3:ACDB</option>
+                  <option value="1905-570425348">MCR: OG SWT YRD</option>
+                  <option value="1905-570425347">MCR:ACDB</option>
+                  <option value="1905-570425344">MCR:C &amp; R Panel</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-3">
+                <label>Parameter:</label>
+                <select id="parameter_0" name="parameter" class="form-control">
+                  <option value="rvrs_kwh">Energy Export</option>
+                  <option value="frwd_kwh">Energy Import</option>
+                  <option value="volt_r">Voltage RY</option>
+                  <option value="current_r">Current R</option>
+                  <option value="volt_y">Voltage YB</option>
+                  <option value="current_y">Current Y</option>
+                  <option value="volt_b">Voltage BR</option>
+                  <option value="current_b">Current B</option>
+                  <option value="total_active_power">Active Power</option>
+                  <option value="power_factor">Power Factor</option>
+                  <option value="total_reactive_power">Reactive Power</option>
+                  <option value="frequency">Frequency</option>
+                </select>
+              </div>
+
+              <div class="form-group col-md-3 pt-3">
+                <button type="submit" class="btn btn-primary btn-sm mt-2">Delete</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="fonts/all.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="css/jquery.timepicker.min.css">
+  <script src="js/jquery.timepicker.js"></script>
+</body>
+</html>
+
+<!--Custom Script -->
+<script src="js/customScript.js"></script>
+<script src="js/dashboard01.js"></script>
+
+

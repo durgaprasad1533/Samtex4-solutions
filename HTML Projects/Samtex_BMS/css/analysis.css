@@ -1,0 +1,76 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #232323;
+  text-align: left;
+  background-image: radial-gradient(circle, #87979b 0%, #536775 71%, #34495e 100%);
+}
+
+.heading {
+  font-size: 1.0rem;
+  font-weight: bold;
+  line-height: 2;
+  text-transform: uppercase;
+}
+
+.pt-4, .py-4 {
+  padding-top: 2.5rem !important;
+}
+
+label {
+  font-weight: bold;
+  color: #31859c;
+  font-size: 12px;
+  padding: 0 2px;
+  margin: 0px;
+}
+
+table.datatable {
+  border: red solid 0px;
+  padding: 0 2px 0 2px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.datatable th {
+  border: 1px solid #bebebe;
+  color: #222222;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  padding: 2px;
+}
+
+table.datatable td {
+  font-family: "Segoe UI", "Segoe UI Light", arial;
+  background: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  padding: 3px;
+  border: #dddddd solid 1px;
+}
+
+table.datatable tr:hover td {
+  background: #e1e9f2;
+}
+
+table.datatable tr:nth-child(even) {
+  background-color: #013544;
+}
+
+.findalarm {
+  background-color: #ecebeb;
+  border: solid #aaaaaa 1px;
+}
+
+.formbg {
+  background: #ddf0f5;
+  border: solid #bed6dd 1px;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=analysis.css.map */

@@ -1,0 +1,113 @@
+$site-family:   'Roboto', sans-serif;
+$site-color: #000;
+$site-font: 1rem;
+$line-height: 1em;
+$prim: #131816;
+
+body{
+    font-family: $site-family; font-size: $site-font;
+    color: $site-color; line-height: $line-height; color: #fff;
+    // background-image: radial-gradient(circle, #87979b 0%,#536775 71%,  #34495e 100%) !important; 
+}
+@mixin bg-image {
+    background-image: url("images/pexels-rpnickson-2885320.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+
+.login{
+    @include bg-image;
+    width:100%;
+    height: 96vh;
+    border:dotted red 0px; 
+    
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items:center;
+   
+    .logo{
+        text-align: center;
+        align-items: center;
+        margin: 0px;padding: 4px;
+        top:-26px;
+        position: relative;
+        background-color: #ffffff;
+        border-top-left-radius:6px;
+        border-top-right-radius:6px;
+    
+
+      img{width: 80%; height: auto;}  
+        
+    }
+    .loginbox{
+        width: 400px;
+        background:#3a4f62;
+        border-radius: 6px;
+        border:0px solid #496989 ;
+        /*box-shadow: 3px 5px 3px 5px #dae6fa;*/
+        background-color:none;
+    }
+    .names{
+        padding: 2px 3px;
+        margin: 0 auto 6px auto;
+        width: 275px;
+        border:dotted red 0px;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+
+        
+    }
+    /*Input */
+    input[type=text],[type=password]{
+		appearance: none;
+		outline: 0;
+		border: 1px solid  #c4c9e8 ;
+		background-color:  #e7e9f7;
+		width: 250px;
+		border-radius: 4px;
+		padding: 6px 10px;
+		margin: 0 auto 10px auto;
+		display: block;
+		text-align: left;
+		font-size: 14px;
+		color: $site-color;
+		transition-duration: 0.25s;
+		font-weight: normal;
+		&:hover{
+              background-color: fade(white, 40%); 
+           
+		}
+		&:focus{
+			background-color: white;
+			width: 280px;
+			color: $prim;   
+        }
+    }
+    .cbox { display: inline !important;  }
+}
+
+
+/*end */
+button{
+    background: linear-gradient(45deg, rgba(108,126,226,1) 0%, rgba(66,159,236,1) 89%); 
+    border: 0;
+    padding: 6px 10px;
+		margin: 0 auto 10px auto;
+    color: $prim;
+    border-radius: 3px;
+    display: block;
+    width: 250px;
+    cursor: pointer;
+    font-size: 18px;
+    transition-duration: 0.25s;
+    margin-bottom: 50px;
+    
+    &:hover{
+        background: linear-gradient(45deg, rgb(9, 20, 31) 0%, rgb(3, 11, 44) 89%); 
+    }
+}			
+
+
+ 

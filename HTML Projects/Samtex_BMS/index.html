@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Samtex</title>
+
+
+    <link rel="stylesheet" href="css/login.css">
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <link rel="stylesheet" href="fonts/all.css">
+    <link rel="stylesheet" href="css/jquery-ui.css" >
+    <link rel="stylesheet" href="Roboto/css?family=Roboto&display=swap"> 
+ 
+    <style>
+   
+    </style>
+</head>
+<body>
+    <header>
+        <div class="login bg-image">
+            <div class="loginbox">
+                <form action="dashboard.html">
+                    <div class="logo">
+                        <img src="images/neobrand.jpg" alt="">
+                    </div>
+                    <div class="names">User Name</div>
+                    <input type="text" id="username" placeholder="username">
+                    <div class="names">Password</div>
+                    <input type="password" id="password" placeholder="password">
+                    <div class="names">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                        <label class="cbox" for="remember">Remember me</label>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Added datetime element -->
+    <div id="datetime" style="text-align:center; margin-top: 20px;"></div>
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="fonts/all.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<!-- Custom Script -->
+<script src="js/customScript.js"></script>
+
+<script>
+    var today = new Date();
+    var date = today.getFullYear() + '/' + (today.getMonth() + 1) + '/' + today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var dateTime = date + ' ' + time;
+    
+    // Ensure datetime element exists before assigning value
+    var datetimeElement = document.getElementById("datetime");
+    if (datetimeElement) {
+        datetimeElement.innerHTML = dateTime;
+    }
+</script>

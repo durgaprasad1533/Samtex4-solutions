@@ -1,0 +1,166 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #232323;
+  text-align: left;
+  background-image: radial-gradient(circle, #87979b 0%, #536775 71%, #34495e 100%);
+}
+
+.heading {
+  font-size: 1.0rem;
+  font-weight: bold;
+  line-height: 2;
+  text-transform: uppercase;
+}
+
+/* table */
+table {
+  border: red solid 0px;
+  padding: 0 0 0 2px;
+  margin: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th {
+  background: #ddf0f5;
+  border: solid #bed6dd 1px;
+  color: #222222;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 2px;
+}
+
+table td {
+  font-family: "Segoe UI", "Segoe UI Light", arial;
+  background: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  padding: 3px;
+  border: #dddddd solid 1px;
+}
+
+table td span.critical {
+  color: #f90000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+table td span.warning {
+  color: #f97400;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+table td span.info {
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+tr:hover td {
+  background: #e1e9f2;
+}
+
+select.datatable {
+  width: 80px  !important;
+  font-family: 'Roboto', sans-serif;
+  padding: 4px 0px;
+  font-size: 14;
+  margin: 4px 0px;
+}
+
+input[type=text].datatable {
+  width: 70px !important;
+  font-family: 'Roboto', sans-serif;
+  padding: 4px 0px;
+  font-size: 14;
+  margin: 4px 0px;
+  border: 1px solid #ced4da;
+}
+
+.pt-4, .py-4 {
+  padding-top: 2.5rem !important;
+}
+
+input[type=text]:focus.datatable {
+  color: #495057;
+  background-color: #fff;
+  border-color: #78c1d5;
+  outline: 0;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 0 0.1rem rgba(49, 133, 156, 0.25);
+  box-shadow: 0 0 0 0.1rem rgba(49, 133, 156, 0.25);
+}
+
+table.datatable {
+  border: red solid 2px;
+  padding: 0 2px 0 2px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.datatable th {
+  background: #ddf0f5;
+  border: solid #bed6dd 1px;
+  color: #222222;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 2px;
+}
+
+table.datatable td {
+  background: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  padding: 3px;
+  border: #dddddd solid 1px;
+}
+
+table.datatable td span.critical {
+  color: #f90000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+table.datatable td span.warning {
+  color: #f97400;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+table.datatable td span.info {
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+table.datatable tr:hover td {
+  background: #e1e9f2;
+}
+
+.findalarm {
+  background-color: #ecebeb;
+  border: solid #aaaaaa 1px;
+}
+
+form label {
+  font-weight: bold;
+  color: #31859c;
+  font-size: 12px;
+  padding: 0 2px;
+  margin: 0px;
+}
+
+.formbg {
+  background: #ddf0f5;
+  border: solid #6a284d 1px;
+  border-radius: 4px;
+}
+/*# sourceMappingURL=alarms.css.map */
